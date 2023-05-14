@@ -20,6 +20,37 @@
 			top: 0;
 			width: 100%;
 			background-color: white;
+			&__phone {
+				display: flex;
+			}
+			&__navigaction {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				&__logo {
+					padding: 1.5rem;
+					img {
+						width: 35%;
+					}
+				}
+				&__links {
+					padding: 1.5rem;
+					margin-right: 40px;
+					font-size: 18px;
+					text-transform: uppercase;
+					&__link {
+						padding: 0.5rem;
+						text-decoration: none;
+						color: black;
+						margin-left: 20px;
+						transition: background-color 0.4s, color 0.4s;
+						&:hover {
+							background-color: black;
+							color: white;
+						}
+					}
+				}
+			}
 		}
 		&__shadow {
 			width: 100%;

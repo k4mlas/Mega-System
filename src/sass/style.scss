@@ -16,83 +16,86 @@ body {
 	position: relative;
 	&__img {
 		width: 100vw;
-		height: 100vh;
-		background-image: url('../img/mainImgBig.jpg');
+		height: 80vh;
+		background-image: url('../img/mainImgSmall.jpg');
 		background-position: center;
 		background-size: cover;
-
-		&__nav {
+		.hamburger {
 			position: fixed;
-			top: 0;
-			width: 100%;
-			font-family: 'K2D', sans-serif;
-			border-bottom: 1px solid #858687;
-			background-color: colors.$lemon;
-			z-index: 100;
-			&__phone {
-				display: flex;
-				justify-content: space-evenly;
-				padding: 0.3rem;
-				text-transform: uppercase;
-				font-size: 1.5rem;
-				background-color: #858687;
-				color: white;
-				&__number {
-					font-weight: 700;
-					i {
-						margin-right: 1rem;
-					}
-					&--title {
-						font-weight: 200;
-					}
-				}
-			}
-			&__navigaction {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				&__logo {
-					padding: 1rem;
-					img {
-						width: 220px;
-						height: 70px;
-					}
-				}
-				&__links {
-					padding: 1.5rem;
-					margin-right: 40px;
-					font-size: 18px;
-					text-transform: uppercase;
-					&__link {
-						padding: 0.5rem;
-						text-decoration: none;
-						color: black;
-						margin-left: 20px;
-						transition: background-color 0.4s, color 0.4s;
-						&:hover {
-							background-color: black;
-							color: white;
-						}
-					}
-				}
-			}
+			top: 2rem;
+			right: 1rem;
+			z-index: 500;
+		}
+
+		&__navDesktop {
+			display: none;
 		}
 		&__shadow {
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.176);
+			background-color: rgba(0, 0, 0, 0.208);
 			z-index: -1;
 		}
 		&__logo {
 			position: absolute;
 			left: 50%;
-			top: 50%;
+			top: 28%;
 			transform: translate(-50%, -50%);
-			z-index: 5;
+			z-index: 2;
 			img {
-				width: 550px;
+				width: 20rem;
+			}
+		}
+		&__navMobile {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100vh;
+			background-color: white;
+			transform: translateX(-102%);
+			transition: transform 0.5s;
+			z-index: 400;
+			&--active {
+				transform: translateX(0);
+			}
+			&__link {
+				text-transform: uppercase;
+				color: black;
+				text-decoration: none;
+				margin-bottom: 1rem;
+				font-family: 'k2d', sans-serif;
+				font-size: 2rem;
+			}
+		}
+		&__phoneNumberMobile {
+			position: absolute;
+			bottom: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			font-family: 'k2d', sans-serif;
+			background-color: colors.$bacgroundNumberMobile;
+			width: 100%;
+			height: 25%;
+			&__number {
+				font-size: 1.2rem;
+				font-weight: 200;
+				i {
+					margin-right: 1rem;
+				}
+				&--title {
+					margin-bottom: 1rem;
+					font-weight: 700;
+				}
 			}
 		}
 	}
 }
-

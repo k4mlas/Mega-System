@@ -11,6 +11,7 @@
     <title>Mega System - Strona Główna</title>
     <link rel="shortcut icon" href="./dist/img/icon/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./dist/css/style.min.css">
+    <link href="./dist/css/hamburger.min.css" rel="stylesheet">
     <!-- @include 'fonts.kit' -->
     <script src="https://kit.fontawesome.com/a29ce9ae35.js" crossorigin="anonymous"></script>
 </head>
@@ -18,28 +19,51 @@
 <body>
     <header class="header">
         <div class="header__img">
-            <nav class="header__img__nav">
-                <div class="header__img__nav__phone">
-                    <p class="header__img__nav__phone__number header__img__nav__phone__number--title">Numery alarmowe
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <nav class="header__img__navDesktop">
+                <div class="header__img__navDesktop__phone">
+                    <p class="header__img__navDesktop__phone__number header__img__nav__phone__number--title">Numery
+                        alarmowe
                         24h:</p>
-                    <p class="header__img__nav__phone__number"><i class="fa-solid fa-phone"></i>502-316-881</p>
-                    <p class="header__img__nav__phone__number"><i class="fa-solid fa-phone"></i>502-382-187</p>
-                    <p class="header__img__nav__phone__number"><i class="fa-solid fa-phone"></i>502-316-856</p>
+                    <p class="header__img__navDesktop__phone__number"><i class="fa-solid fa-phone"></i>502-316-881</p>
+                    <p class="header__img__navDesktop__phone__number"><i class="fa-solid fa-phone"></i>502-382-187</p>
+                    <p class="header__img__navDesktop__phone__number"><i class="fa-solid fa-phone"></i>502-316-856</p>
                 </div>
-                <div class="header__img__nav__navigaction">
-                    <div class="header__img__nav__navigaction__logo"><img src="./dist/img/logo.png"
+                <div class="header__img__navDesktop__navigaction">
+                    <div class="header__img__navDesktop__navigaction__logo"><img src="./dist/img/logo.png"
                             alt="Logo firmy Mega System"></div>
-                    <div class="header__img__nav__navigaction__links">
-                        <a class="header__img__nav__navigaction__links__link" href="#">o nas</a>
-                        <a class="header__img__nav__navigaction__links__link" href="#">oferta</a>
-                        <a class="header__img__nav__navigaction__links__link" href="#">referencje</a>
-                        <a class="header__img__nav__navigaction__links__link" href="#">certyfikaty i koncesje</a>
-                        <a class="header__img__nav__navigaction__links__link" href="#">kontakt</a>
+                    <div class="header__img__navDesktop__navigaction__links">
+                        <a class="header__img__navDesktop__navigaction__links__link" href="#">o nas</a>
+                        <a class="header__img__navDesktop__navigaction__links__link" href="#">oferta</a>
+                        <a class="header__img__navDesktop__navigaction__links__link" href="#">referencje</a>
+                        <a class="header__img__navDesktop__navigaction__links__link" href="#">certyfikaty i koncesje</a>
+                        <a class="header__img__navDesktop__navigaction__links__link" href="#">kontakt</a>
                     </div>
                 </div>
             </nav>
-            <div class="header__img__shadow"></div>
+            <nav class="header__img__navMobile">
+                <a class="header__img__navMobile__link" href="#">o nas</a>
+                <a class="header__img__navMobile__link" href="#">oferta</a>
+                <a class="header__img__navMobile__link" href="#">referencje</a>
+                <a class="header__img__navMobile__link" href="#">certyfikaty i koncesje</a>
+                <a class="header__img__navMobile__link" href="#">kontakt</a>
+            </nav>
+            <div class="header__img__phoneNumberMobile">
+                <p class="header__img__phoneNumberMobile__number header__img__phoneNumberMobile__number--title">Numery
+                    alarmowe
+                    24h:</p>
+                <p class="header__img__phoneNumberMobile__number"><i class="fa-solid fa-phone"></i>502-316-881</p>
+                <p class="header__img__phoneNumberMobile__number"><i class="fa-solid fa-phone"></i>502-382-187</p>
+                <p class="header__img__phoneNumberMobile__number"><i class="fa-solid fa-phone"></i>502-316-856</p>
+
+
+            </div>
             <div class="header__img__logo"><img src="./dist/img/logo.png" alt="Logo firmy Mega System"></div>
+            <div class="header__img__shadow"></div>
         </div>
 
 

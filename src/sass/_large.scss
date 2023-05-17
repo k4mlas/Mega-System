@@ -1,1 +1,83 @@
-@media (min-width: 992px){}
+@media (min-width: 992px) {
+	.header {
+		&__img {
+			height: 100vh;
+			background-image: url('../img/mainImgBig.jpg');
+			.hamburger {
+				display: none;
+			}
+			&__navDesktop {
+				position: fixed;
+				top: 0;
+				display: block;
+				width: 100%;
+				font-family: 'K2D', sans-serif;
+				z-index: 100;
+				&__phone {
+					display: flex;
+					justify-content: space-evenly;
+					padding: 0.3rem;
+					text-transform: uppercase;
+					font-size: 1.2rem;
+					background-color: colors.$bacgroundNumberDesktop;
+					color: colors.$whineMain;
+					&__number {
+						font-weight: 200;
+						i {
+							margin-right: 1rem;
+						}
+						&--title {
+							font-weight: 700;
+							span {
+								color: colors.$lemonMain;
+							}
+						}
+					}
+				}
+				&__navigaction {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					background-color: colors.$whineMain;
+					&__logo {
+						padding: 1rem;
+						img {
+							width: 220px;
+							height: 70px;
+						}
+					}
+					&__links {
+						padding: 1.5rem;
+						margin-right: 2.5rem;
+						font-size: 0.9rem;
+						text-transform: uppercase;
+						&__link {
+							padding: 0.5rem;
+							text-decoration: none;
+							color: colors.$blackMain;
+							margin-left: 1.25rem;
+							transition: background-color 0.4s, color 0.4s;
+							&:hover {
+								background-color: colors.$blackMain;
+								color: colors.$whineMain;
+							}
+						}
+					}
+				}
+			}
+			&__navMobile {
+				display: none;
+			}
+			&__phoneNumberMobile {
+				display: none;
+			}
+
+			&__logo {
+				top: 50%;
+				img {
+					width: 550px;
+				}
+			}
+		}
+	}
+}

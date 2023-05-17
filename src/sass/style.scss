@@ -1,8 +1,7 @@
 //Import-----------------------------------
 @use './colors';
 @use './animations';
-@import './_small';
-
+//Reset------------------------------------
 *,
 *::before,
 *::after {
@@ -13,19 +12,26 @@
 body {
 	font-family: 'Ubuntu', sans-serif;
 }
+//Header-------------------------------------
 .header {
 	position: relative;
 	&__img {
 		width: 100vw;
-		height: 80vh;
+		height: 85vh;
 		background-image: url('../img/mainImgSmall.jpg');
 		background-position: center;
 		background-size: cover;
+		z-index: 0;
 		.hamburger {
 			position: fixed;
 			top: 2rem;
 			right: 1rem;
-			z-index: 500;
+			border: 0.5px solid black;
+			z-index: 5;
+			transition: border 0.4s;
+			&:hover {
+				border: 1px solid colors.$lemonMain;
+			}
 		}
 
 		&__navDesktop {
@@ -42,7 +48,6 @@ body {
 			left: 50%;
 			top: 28%;
 			transform: translate(-50%, -50%);
-			z-index: 2;
 			img {
 				width: 20rem;
 			}
@@ -62,7 +67,8 @@ body {
 			background-color: colors.$whiteNavMobile;
 			transform: translateX(-102%);
 			transition: transform 0.5s;
-			z-index: 400;
+			z-index: 4;
+
 			&--active {
 				transform: translateX(0);
 			}
@@ -91,6 +97,11 @@ body {
 				font-weight: 200;
 				i {
 					margin-right: 1rem;
+					color: colors.$lemonMain;
+				}
+				span {
+					font-size: 2rem;
+					color: colors.$lemonMain;
 				}
 				&--title {
 					margin-bottom: 1rem;

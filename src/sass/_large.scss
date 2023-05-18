@@ -3,6 +3,7 @@
 		&__img {
 			height: 100vh;
 			background-image: url('../img/mainImgBig.jpg');
+			background-attachment: fixed;
 			.hamburger {
 				display: none;
 			}

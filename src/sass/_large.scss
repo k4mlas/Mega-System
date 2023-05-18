@@ -38,7 +38,7 @@
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
-					background-color: colors.$whineMain;
+					// background-color: colors.$whineMain; dodawane po scrollu
 					&__logo {
 						padding: 1rem;
 						img {
@@ -70,6 +70,15 @@
 			}
 			&__phoneNumberMobile {
 				display: none;
+			}
+			&__arrow {
+				position: absolute;
+				left: 50%;
+				top: 80%;
+				transform: translate(-50%, -50%);
+				display: block;
+				cursor: pointer;
+				animation: bounce-in-top 1.8s both infinite;
 			}
 
 			&__logo {

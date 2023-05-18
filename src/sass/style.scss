@@ -17,7 +17,7 @@ body {
 	position: relative;
 	&__img {
 		width: 100vw;
-		height: 85vh;
+		height: 100vh;
 		background-image: url('../img/mainImgSmall.jpg');
 		background-position: center;
 		background-size: cover;
@@ -26,12 +26,9 @@ body {
 			position: fixed;
 			top: 2rem;
 			right: 1rem;
-			border: 0.5px solid black;
 			z-index: 5;
 			transition: border 0.4s;
-			&:hover {
-				border: 1px solid colors.$lemonMain;
-			}
+			
 		}
 
 		&__navDesktop {
@@ -51,6 +48,9 @@ body {
 			img {
 				width: 20rem;
 			}
+		}
+		&__arrow {
+			display: none;
 		}
 		&__navMobile {
 			position: fixed;
@@ -94,10 +94,11 @@ body {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			width: 100%;
+			height: 30%;
 			font-family: 'k2d', sans-serif;
 			background-color: colors.$bacgroundNumberMobile;
-			width: 100%;
-			height: 25%;
+			color:colors.$whineMain;
 			&__number {
 				font-size: 1.2rem;
 				font-weight: 200;
@@ -107,6 +108,7 @@ body {
 				}
 				span {
 					font-size: 2rem;
+					text-transform: uppercase;
 					color: colors.$lemonMain;
 				}
 				&--title {
@@ -117,5 +119,6 @@ body {
 		}
 	}
 }
+@import './animations';
 @import './_small.scss';
 @import './_large.scss';

@@ -22,17 +22,25 @@
 					font-size: 1.2rem;
 					background-color: colors.$bacgroundNumberDesktop;
 					color: colors.$whineMain;
+
 					&__number {
-						font-weight: 200;
+						font-family: 'light2kd';
+						cursor: default;
+						transition: color 0.4s, transform 0.4s;
+						&:hover {
+							color: colors.$lemonMain;
+							transform: scale(1.2);
+						}
 						img {
 							margin-top: auto;
 							margin-right: 1rem;
 						}
-						&--title {
-							font-weight: 700;
-							span {
-								color: colors.$lemonMain;
-							}
+					}
+					&__title {
+						font-weight: 700;
+						cursor: default;
+						span {
+							color: colors.$lemonMain;
 						}
 					}
 				}

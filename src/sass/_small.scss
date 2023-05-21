@@ -16,14 +16,14 @@
 			}
 			&__phoneNumberMobile {
 				&__number {
-					font-size: 1.5rem;
+					font-size: 1.4rem;
 				}
 			}
 		}
 	}
 }
 
-@media (max-height: 500px) {
+@media (max-height: 565px) {
 	.header {
 		&__img {
 			&__logo {
@@ -45,12 +45,12 @@
 				justify-content: space-around;
 				align-items: center;
 				&__number {
-					font-size: 1rem;
+					font-size: .8rem;
 					img {
-						margin-right: 1rem;
+						margin-right: .2rem;
 					}
 					span {
-						font-size: 1rem;
+						font-size: .8rem;
 						text-transform: uppercase;
 						color: colors.$lemonMain;
 					}

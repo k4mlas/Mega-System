@@ -1,12 +1,49 @@
+//Wrapper
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
 }
+//Brak scrollu dla nawigacji moblinej
 .sticky-body {
 	overflow: hidden;
 }
+//kolor nawigacji desktop
 
 .addBackground {
 	background-color: colors.$whineMain;
+}
+
+//tytuł sekcji
+
+.sectionTitle {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	font-family: 'regular2kd', sans-serif;
+	text-transform: uppercase;
+	color: colors.$blackMain;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 10px;
+		background-color: colors.$bluMain;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		height: 10px;
+		background-color: colors.$lemonMain;
+	}
 }

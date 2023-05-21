@@ -119,18 +119,28 @@ body {
 			&--active {
 				transform: translateX(0);
 			}
-			&__link {
-				padding: 1rem;
-				margin-bottom: 1rem;
-				font-family: 'regular2kd', sans-serif;
-				font-size: 1.5rem;
-				text-transform: uppercase;
-				text-decoration: none;
-				color: colors.$blackMain;
-				transition: color 0.4s, background-color 0.4s;
-				&:hover {
-					background-color: colors.$blackMain;
-					color: colors.$whineMain;
+			&__body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				background-color: rebeccapurple;
+				&__link {
+					padding: 1rem;
+					margin-bottom: 1rem;
+					font-family: 'regular2kd', sans-serif;
+					font-size: 1.5rem;
+					text-transform: uppercase;
+					text-decoration: none;
+					text-align: center;
+					color: colors.$blackMain;
+					transition: color 0.4s, background-color 0.4s;
+					&:hover {
+						background-color: colors.$blackMain;
+						color: colors.$whineMain;
+					}
 				}
 			}
 		}

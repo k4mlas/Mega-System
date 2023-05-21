@@ -7,14 +7,57 @@
 				}
 			}
 			&__navMobile {
-				&__link {
-					margin-bottom: 2rem;
-					font-size: 2rem;
+				&__body {
+					&__link {
+						margin-bottom: 2rem;
+						font-size: 2rem;
+					}
 				}
 			}
 			&__phoneNumberMobile {
 				&__number {
 					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-height: 500px) {
+	.header {
+		&__img {
+			&__logo {
+				img {
+					width: 15rem;
+				}
+			}
+			&__navMobile {
+				&__body {
+					&__link {
+						padding: 0.2rem;
+						margin-bottom: 0.1rem;
+						font-size: 0.9rem;
+					}
+				}
+			}
+			&__phoneNumberMobile {
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				&__number {
+					font-size: 1rem;
+					img {
+						margin-right: 1rem;
+					}
+					span {
+						font-size: 1rem;
+						text-transform: uppercase;
+						color: colors.$lemonMain;
+					}
+					&--title {
+						margin-bottom: 0;
+						font-weight: 700;
+					}
 				}
 			}
 		}

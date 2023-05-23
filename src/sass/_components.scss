@@ -28,25 +28,24 @@
 	font-family: 'regular2kd', sans-serif;
 	text-transform: uppercase;
 	color: colors.$blackMain;
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 50%;
-		height: 10px;
-		background-color: colors.$bluMain;
-	}
+	&::after,
 	&::before {
 		content: '';
 		position: absolute;
-		bottom: 0;
-		right: 0;
 		width: 50%;
 		height: 10px;
+	}
+	&::after {
+		top: 0;
+		left: 0;
+		background-color: colors.$bluMain;
+	}
+	&::before {
+		bottom: 0;
+		right: 0;
 		background-color: colors.$lemonMain;
 	}
 	h2 {
-		padding: .5rem;
+		padding: 0.5rem;
 	}
 }

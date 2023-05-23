@@ -102,36 +102,24 @@
 	}
 	.aboutUs {
 		&__body {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			&__photo {
-				position: relative;
-				margin-bottom: 130px;
-				&__shadow {
-					width: 18.75rem;
-					height: 12.5rem;
-					border-radius: 1.25rem;
-					filter: blur(24px);
-					background-color: colors.$bluMain;
+			&__container {
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				&__photo {
+					&__picture {
+						&:hover {
+							border-top: 15px solid colors.$bluMain;
+							border-bottom: 15px solid colors.$lemonMain;
+							border-left: 15px solid colors.$bluMain;
+							border-right: 15px solid colors.$lemonMain;
+						}
+						transition: border 0.4s;
+					}
 				}
-				&__border {
-					position: absolute;
-					top: 40%;
-					left: 25%;
-					width: 18.75rem;
-					height: 12.5rem;
-					border-radius: 1.25rem;
-					border: 3px solid colors.$lemonMain;
-				}
-				&__picture {
-					position: absolute;
-					top: 20%;
-					left: 15%;
-					border-radius: 1.25rem;
-					width: 18.75rem;
-					height: 12.5rem;
+				&__text {
+					padding: 2rem;
+					text-align: justify;
 				}
 			}
 		}

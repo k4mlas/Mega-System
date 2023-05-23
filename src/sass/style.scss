@@ -189,28 +189,34 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		&__photo {
-			&__shadow {
-				display: none;
+		&__container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			&__photo {
+				&__shadow {
+					display: none;
+				}
+				&__border {
+					display: none;
+				}
+				&__picture {
+					width: 18.75rem;
+					height: 12.5rem;
+					border-radius: 1.25rem;
+					border-top: 5px solid colors.$bluMain;
+					border-bottom: 5px solid colors.$lemonMain;
+					border-left: 5px solid colors.$bluMain;
+					border-right: 5px solid colors.$lemonMain;
+					margin-top: 2.5rem;
+					margin-bottom: 2rem;
+				}
 			}
-			&__border {
-				display: none;
+			&__text {
+				padding: 2rem;
+				text-align: justify;
 			}
-			&__picture {
-				width: 18.75rem;
-				height: 12.5rem;
-				border-radius: 1.25rem;
-				border-top: 5px solid colors.$bluMain;
-				border-bottom: 5px solid colors.$lemonMain;
-				border-left: 5px solid colors.$bluMain;
-				border-right: 5px solid colors.$lemonMain;
-				margin-top: 2.5rem;
-				margin-bottom: 2rem;
-			}
-		}
-		&__text {
-			padding: 2rem;
-			text-align: justify;
 		}
 	}
 }

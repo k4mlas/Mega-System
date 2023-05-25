@@ -214,37 +214,49 @@ body {
 		}
 	}
 	&__skills {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 		min-height: 500px;
 		background: colors.$skillColor;
 		&__container {
 			display: flex;
-			flex-direction: column;
+			flex-wrap: wrap;
 			justify-content: center;
-			align-items: center;
-			&__body {
+			&__content {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				&__content {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					&__img{
-					
-						width: 150px;
-						height: 150px;
-						filter: drop-shadow(5px 10px 10px black);
-						border-bottom: 1px solid black;
-						&:hover {
-							stroke: colors.$lemonMain;
-							
-						}
-					
-					
+				padding: 1rem;
+				max-width: 400px;
+				&__img {
+					margin-bottom: 20px;
+					width: 100px;
+					height: 100px;
+					stroke: colors.$whineMain;
+					filter: drop-shadow(5px 5px 5px black);
+					transition: stroke 0.5s;
+					&:hover,
+					&:hover ~ p {
+						stroke: colors.$lemonMain;
+						color: colors.$lemonMain;
 					}
+				}
+				&__title {
+					text-transform: uppercase;
+					text-align: center;
+					font-size: 1rem;
+					color: colors.$whineMain;
+					transition: color 0.5s;
+				}
+				&__text {
+					padding: 0.4rem;
+					text-align: center;
+					font-size: 0.8rem;
+					color: colors.$whineMain;
+					transition: color 0.4s;
 				}
 			}
 		}

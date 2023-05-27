@@ -264,6 +264,29 @@ body {
 		}
 	}
 }
+//Section offer--------------------------------------------
+
+.offer {
+	&__container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 1.3rem;
+		&__options{
+			width: 15.625rem;
+			height: 33rem;
+			border-radius: 1.25rem;
+			overflow: hidden;
+			background: colors.$offerBody;
+			&__title{
+				width: 100%;
+				height: 9.375rem;
+				background: colors.$offerTitle;
+			}
+		}
+	}
+}
 
 @import './components';
 @import './animations';

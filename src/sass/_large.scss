@@ -131,4 +131,25 @@
 			}
 		}
 	}
+	.offer {
+		&__container {
+			&__options {
+				height: 30rem;
+				&__title {
+					&__text {
+						font-size: 1.1rem;
+					}
+				}
+				&__body {
+					height: 29rem;
+					ul {
+						li {
+							padding: 0.5rem;
+							font-size: .9rem;
+						}
+					}
+				}
+			}
+		}
+	}
 }

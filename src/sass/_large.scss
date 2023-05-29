@@ -90,14 +90,9 @@
 				top: 85%;
 				transform: translate(-50%, -50%);
 				transition: fill 0.9s;
+				cursor: pointer;
 				&__icon {
-					cursor: pointer;
 					animation: bounce-in-top 1.8s both infinite;
-					&__body {
-						&:hover {
-							fill: colors.$whineMain;
-						}
-					}
 				}
 			}
 

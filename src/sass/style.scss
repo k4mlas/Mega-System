@@ -358,44 +358,38 @@ body {
 		}
 		&__opinionsOne {
 			display: flex;
-			justify-content: space-evenly;
+		width: 100%;
+			
+			justify-content: space-between;
 			align-items: center;
-background-color: red;
-			
+			// background-color: red;
+
 			// height: 300px;
-			
-			
+
+			.box {
+				width: 200px;
+				height: 300px;
+			}
 			&__one {
 				
-			margin: 15px;
 				
-				padding: 1rem;
 				background-color: rgba(0, 0, 255, 0.349);
 			}
-			&__two{
-				margin: 15px;
-				padding: 1rem;
-				background-color: rgb(51, 255, 0);
+			&__two {
+				background-color: rgba(51, 255, 0, 0.428);
 			}
-			&__three{
-				margin: 15px;
-				padding: 1rem;
-				background-color: rgb(126, 161, 117);
+			&__three {
+				background-color: rgba(126, 161, 117, 0.499);
 			}
-			&__four{
-				margin: 15px;
-				padding: 1rem;
-				background-color: rgb(72, 226, 240);
+			&__four {
+				background-color: rgba(72, 226, 240, 0.467);
 			}
-			&__five{
-				margin: 15px;
-				padding: 1rem;
-				background-color: rgb(233, 25, 136);
+			&__five {
+				background-color: rgba(233, 25, 136, 0.43);
 			}
 		}
 		&__opinionsTwo {
-			display: flex;
-			flex-direction: row;
+			
 
 			width: 100%;
 			height: 300px;

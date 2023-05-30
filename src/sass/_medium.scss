@@ -1,12 +1,7 @@
 @media (min-width: 768px) {
-	.imgQuote {
-		height: 75vh;
+	.boardQuote {
 		background-image: url(../img/heroCityBig.jpg);
 		background-position: center;
-		&__shadow {
-			&__text {
-				font-size: 1.3rem;
-			}
-		}
+		
 	}
 }

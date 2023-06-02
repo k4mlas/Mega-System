@@ -62,6 +62,33 @@ html {
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'imbueregular';
+	src: url('../fonts/imbue_14pt-regular-webfont.woff2') format('woff2'),
+		url('../fonts/imbue_14pt-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'imbuethin';
+	src: url('../../dist/fonts/imbue_14pt-thin-webfont.woff2') format('woff2'),
+		url('../../dist/fonts/imbue_14pt-thin-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'imbue_24ptextralight';
+	src: url('imbue_24pt-extralight-webfont.woff2') format('woff2'),
+		url('imbue_24pt-extralight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 body {
 	font-family: 'regularUbuntu', sans-serif;
 }
@@ -346,19 +373,21 @@ body {
 			align-items: center;
 			padding: 1rem;
 			width: 100%;
-			background-color: yellow;
+			font-family:'imbuethin';
+			// background-color: yellow;
 			&__entry {
 				width: 100%;
 				padding: 0.5rem;
 				margin-bottom: 0.5rem;
 				background-color: colors.$whineMain;
 				&__text {
-					font-size: 0.7rem;
+					font-size: 1rem;
 					margin-bottom: 0.4rem;
 					text-align: justify;
 				}
 				&__author {
-					font-size: 0.6rem;
+					font-size: 0.9rem;
+					font-family: 'imbueregular';
 					text-align: right;
 				}
 			}
@@ -372,20 +401,20 @@ body {
 				&__entryOne {
 					padding: 0.5rem;
 					background-color: colors.$whineMain;
-					&--left{
-						margin-right: .5rem;
-
+					&--left {
+						margin-right: 0.5rem;
 					}
 					&--right {
-						margin-left: .5rem;
+						margin-left: 0.5rem;
 					}
 					&__text {
-						font-size: 0.7rem;
+						font-size: 1rem;
 						margin-bottom: 0.4rem;
 						text-align: justify;
 					}
 					&__author {
-						font-size: 0.6rem;
+						font-size: .9rem;
+						font-family: 'imbueregular';
 						text-align: right;
 					}
 				}
@@ -400,11 +429,13 @@ body {
 				margin-bottom: 0.4rem;
 				text-transform: uppercase;
 				text-align: center;
-				font-size: 0.9rem;
+				font-family:'imbuethin';
+				font-size: 2rem;
 			}
 			&__author {
 				text-align: right;
-				font-size: 0.6rem;
+				font-family: 'imbueregular';
+				font-size: 1rem;
 			}
 		}
 		&__opinionsTwo {

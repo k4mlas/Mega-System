@@ -362,7 +362,7 @@ body {
 	&__body {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
 		width: 100%;
 		height: 100%;
@@ -374,12 +374,14 @@ body {
 			padding: 1rem;
 			width: 100%;
 			font-family:'imbuethin';
-			// background-color: yellow;
 			&__entry {
 				width: 100%;
 				padding: 0.5rem;
 				margin-bottom: 0.5rem;
 				background-color: colors.$whineMain;
+				&:hover{
+					transform: scale(.9);
+				}
 				&__text {
 					font-size: 1rem;
 					margin-bottom: 0.4rem;
@@ -401,6 +403,9 @@ body {
 				&__entryOne {
 					padding: 0.5rem;
 					background-color: colors.$whineMain;
+					&:hover{
+						transform: scale(.9);
+					}
 					&--left {
 						margin-right: 0.5rem;
 					}
@@ -423,7 +428,7 @@ body {
 		&__quote {
 			width: 100%;
 			padding: 1rem;
-			background-color: colors.$whineMain;
+			background-color: colors.$quoteBackground;
 			color: colors.$blackMain;
 			&__text {
 				margin-bottom: 0.4rem;
@@ -438,11 +443,7 @@ body {
 				font-size: 1rem;
 			}
 		}
-		&__opinionsTwo {
-			width: 100%;
-			height: 300px;
-			background-color: red;
-		}
+		
 	}
 }
 

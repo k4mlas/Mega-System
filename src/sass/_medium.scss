@@ -2,6 +2,80 @@
 	.boardQuote {
 		background-image: url(../img/heroCityBig.jpg);
 		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		&__body {
+			&__opinionsOne {
+				flex-direction:  row;
+				justify-content: space-around;
+				&__entry {
+					width: 100%;
+					padding: 0.5rem;
+					margin-bottom: 0.5rem;
+					background-color: colors.$whineMain;
+					&:hover{
+						transform: scale(1.1);
+					}
+					&__text {
+						font-size: 1.5rem;
+						margin-bottom: 0.4rem;
+						text-align: justify;
+					}
+					&__author {
+						font-size: 1.2rem;
+						font-family: 'imbueregular';
+						text-align: right;
+					}
+				}
+				&__container {
+					flex-direction: column;
+					justify-content: space-around;
+					align-items: center;
+					width: 100%;
+					&__entryOne {
+						padding: 0.5rem;
+						background-color: colors.$whineMain;
+						&:hover{
+							transform: scale(1.1);
+						}
+						&--left {
+							margin-right: 0;
+						}
+						&--right {
+							margin-left: 0;
+						}
+						&__text {
+							font-size: 1.5rem;
+							margin-bottom: 0.4rem;
+							text-align: justify;
+						}
+						&__author {
+							font-size: 1.2rem;
+							font-family: 'imbueregular';
+							text-align: right;
+						}
+					}
+				}
+			}
+			&__quote {
+				width: 100%;
+				padding: 1rem;
+				background-color: colors.$quoteBackground;
+				color: colors.$blackMain;
+				&__text {
+					margin-bottom: 0.4rem;
+					text-transform: uppercase;
+					text-align: center;
+					font-family:'imbuethin';
+					font-size: 2rem;
+				}
+				&__author {
+					text-align: right;
+					font-family: 'imbueregular';
+					font-size: 1rem;
+				}
+			}
 		
+		}
 	}
 }

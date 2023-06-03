@@ -361,7 +361,7 @@ body {
 	align-items: center;
 	width: 100%;
 	min-height: 100vh;
-	background: colors.$quoteBackground;
+	background: colors.$skillColor;
 	background-attachment: fixed;
 	&__body {
 		display: flex;
@@ -386,13 +386,14 @@ body {
 				padding: 0.5rem;
 				margin-bottom: 0.5rem;
 				background-color: colors.$whineMain;
-				transition: transform 0.4s;
+				transition: transform 0.4s, background-color 0.4s;
 				cursor: pointer;
 				&:last-child {
 					margin-bottom: 0;
 				}
 				&:hover {
 					transform: scale(0.9);
+					background-color: colors.$lemonMain;
 				}
 				&__text {
 					font-size: 1rem;
@@ -415,10 +416,11 @@ body {
 				&__entryOne {
 					padding: 0.5rem;
 					background-color: colors.$whineMain;
-					transition: transform 0.4s;
+					transition: transform 0.4s, background-color 0.4s;
 					cursor: pointer;
 					&:hover {
 						transform: scale(0.9);
+						background-color: colors.$lemonMain;
 					}
 					&--left {
 						margin-right: 0.5rem;
@@ -448,7 +450,7 @@ body {
 				text-transform: uppercase;
 				text-align: center;
 				font-family: 'imbuethin';
-				font-size: 2rem;
+				font-size: 1.5rem;
 			}
 			&__author {
 				text-align: right;
@@ -462,5 +464,5 @@ body {
 @import './components';
 @import './animations';
 @import './_small.scss';
-@import './_large.scss';
 @import './_medium.scss';
+@import './_large.scss';

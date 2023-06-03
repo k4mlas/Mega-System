@@ -1,25 +1,40 @@
 @media (min-width: 768px) {
 	.boardQuote {
-		background-image: url(../img/heroCityBig.jpg);
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
 		&__body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
 			&__opinionsOne {
-				flex-direction:  row;
-				justify-content: space-around;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 1rem;
+				width: 100%;
+				font-family: 'imbuethin';
+				&:last-child {
+					margin-bottom: 0;
+				}
 				&__entry {
 					width: 100%;
 					padding: 0.5rem;
 					margin-bottom: 0.5rem;
 					background-color: colors.$whineMain;
-					&:hover{
-						transform: scale(1.1);
+					transition: transform 0.4s;
+					cursor: pointer;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					&:hover {
+						transform: scale(0.9);
 					}
 					&__text {
 						font-size: 1.5rem;
 						margin-bottom: 0.4rem;
-						text-align: justify;
+						text-align: center;
 					}
 					&__author {
 						font-size: 1.2rem;
@@ -28,26 +43,30 @@
 					}
 				}
 				&__container {
-					flex-direction: column;
-					justify-content: space-around;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
 					align-items: center;
+					margin-bottom: 0.5rem;
 					width: 100%;
 					&__entryOne {
 						padding: 0.5rem;
 						background-color: colors.$whineMain;
-						&:hover{
-							transform: scale(1.1);
+						transition: transform 0.4s;
+						cursor: pointer;
+						&:hover {
+							transform: scale(0.9);
 						}
 						&--left {
-							margin-right: 0;
+							margin-right: 0.5rem;
 						}
 						&--right {
-							margin-left: 0;
+							margin-left: 0.5rem;
 						}
 						&__text {
 							font-size: 1.5rem;
 							margin-bottom: 0.4rem;
-							text-align: justify;
+							text-align: center;
 						}
 						&__author {
 							font-size: 1.2rem;
@@ -60,13 +79,12 @@
 			&__quote {
 				width: 100%;
 				padding: 1rem;
-				background-color: colors.$quoteBackground;
-				color: colors.$blackMain;
+				color: colors.$whineMain;
 				&__text {
 					margin-bottom: 0.4rem;
 					text-transform: uppercase;
 					text-align: center;
-					font-family:'imbuethin';
+					font-family: 'imbuethin';
 					font-size: 2rem;
 				}
 				&__author {
@@ -75,7 +93,6 @@
 					font-size: 1rem;
 				}
 			}
-		
 		}
 	}
 }

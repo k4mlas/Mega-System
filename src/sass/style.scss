@@ -361,8 +361,8 @@ body {
 	align-items: center;
 	width: 100%;
 	min-height: 100vh;
-	background-color: #000000;
-	background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+	background: colors.$quoteBackground;
+	background-attachment: fixed;
 	&__body {
 		display: flex;
 		flex-direction: column;
@@ -378,11 +378,19 @@ body {
 			padding: 1rem;
 			width: 100%;
 			font-family: 'imbuethin';
+			&:last-child {
+				margin-bottom: 0;
+			}
 			&__entry {
 				width: 100%;
 				padding: 0.5rem;
 				margin-bottom: 0.5rem;
 				background-color: colors.$whineMain;
+				transition: transform 0.4s;
+				cursor: pointer;
+				&:last-child {
+					margin-bottom: 0;
+				}
 				&:hover {
 					transform: scale(0.9);
 				}
@@ -407,6 +415,8 @@ body {
 				&__entryOne {
 					padding: 0.5rem;
 					background-color: colors.$whineMain;
+					transition: transform 0.4s;
+					cursor: pointer;
 					&:hover {
 						transform: scale(0.9);
 					}
@@ -432,7 +442,6 @@ body {
 		&__quote {
 			width: 100%;
 			padding: 1rem;
-			background-color: colors.$skillColor;
 			color: colors.$whineMain;
 			&__text {
 				margin-bottom: 0.4rem;

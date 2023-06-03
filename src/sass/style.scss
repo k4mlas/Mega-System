@@ -460,6 +460,15 @@ body {
 		}
 	}
 }
+.opinions {
+	&__body {
+		&__content {
+			width: 350px;
+			height: 200px;
+			background-color: red;
+		}
+	}
+}
 
 @import './components';
 @import './animations';

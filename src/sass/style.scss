@@ -481,7 +481,7 @@ body {
 			margin-top: 2rem;
 			margin-bottom: 2rem;
 			&__logo {
-				width: 40%;
+				width: 100px;
 				margin-bottom: 2rem;
 			}
 			&__text {
@@ -493,7 +493,8 @@ body {
 				font-size: 1rem;
 			}
 			&__pdf {
-				width: 70%;
+				display: block;
+				width: 250px;
 				margin-bottom: 2rem;
 				border-radius: 1.25rem;
 				border-top: 7px solid colors.$bluMain;

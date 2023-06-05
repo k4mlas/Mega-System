@@ -36,4 +36,17 @@
 			}
 		}
 	}
+	.thanks {
+		&__body {
+			&__content {
+				&__thank {
+					flex-direction: row;
+					flex-wrap: wrap;
+					&__pdf {
+						margin: .5rem;
+					}
+				}
+			}
+		}
+	}
 }

@@ -187,64 +187,32 @@
 	}
 	.thanks {
 		&__body {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
 			&__content {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 				align-items: flex-start;
 				width: 100%;
-				margin-top: 2rem;
-				margin-bottom: 2rem;
-				&__logo {
-					display: block;
-					width: 11rem;
-					margin-bottom: 2rem;
-				}
-				&__text {
-					padding: 1rem;
-					margin-bottom: 2rem;
-					text-align: center;
-					text-transform: uppercase;
-					font-family: 'regular2kd', sans-serif;
-					font-size: 1.5rem;
+				margin-top: 0;
+				margin-bottom: 0;
+				&__box {
+					position: sticky;
+					top: 10.938rem;
+					padding: 2rem;
+					&__logo {
+						width: 11rem;
+					}
+					&__text {
+						font-size: 1.5rem;
+					}
 				}
 				&__thank {
-					display: flex;
 					flex-direction: column;
-					justify-content: center;
-					align-items: center;
 					&__pdf {
-						display: block;
-						width: 550px;
-						margin-bottom: 2rem;
-						border-radius: 1.25rem;
-						border-top: 7px solid colors.$bluMain;
-						border-bottom: 7px solid colors.$lemonMain;
-						border-left: 7px solid colors.$bluMain;
-						border-right: 7px solid colors.$lemonMain;
-						cursor: pointer;
-						transition: border 0.4s;
-						&:hover {
-							border-top: 13px solid colors.$bluMain;
-							border-bottom: 13px solid colors.$lemonMain;
-							border-left: 13px solid colors.$bluMain;
-							border-right: 13px solid colors.$lemonMain;
-						}
+						width: 34rem;
 					}
 				}
 			}
 		}
-	}
-	.blok {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		
 	}
 }

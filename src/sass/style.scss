@@ -480,17 +480,24 @@ body {
 			width: 100%;
 			margin-top: 2rem;
 			margin-bottom: 2rem;
-			&__logo {
-				width: 9.375rem;
-				margin-bottom: 2rem;
-			}
-			&__text {
-				padding: 1rem;
-				margin-bottom: 2rem;
-				text-align: center;
-				text-transform: uppercase;
-				font-family: 'regular2kd', sans-serif;
-				font-size: 1rem;
+			&__box {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				&__logo {
+					width: 9.375rem;
+					margin-bottom: 2rem;
+				}
+				&__text {
+					padding: 1rem;
+					margin-bottom: 2rem;
+					text-align: center;
+					text-transform: uppercase;
+					font-family: 'regular2kd', sans-serif;
+					font-size: 1rem;
+				}
 			}
 			&__thank {
 				display: flex;
@@ -499,7 +506,7 @@ body {
 				align-items: center;
 				&__pdf {
 					display: block;
-					width: 250px;
+					width: 15.625rem;
 					margin-bottom: 2rem;
 					border-radius: 1.25rem;
 					border-top: 7px solid colors.$bluMain;

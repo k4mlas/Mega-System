@@ -545,13 +545,14 @@ body {
 			padding: 1.5rem;
 			&__title{
 				margin-bottom: 1rem;
+				font-family: 'regular2kd', sans-serif;
 				font-size: 1.2rem;
 				text-transform: uppercase;
 				text-align: center;
 				color: colors.$blackMain;
 			}
 			&__img{
-				width: 200px;
+				width: 250px;
 				border-radius: 1.25rem;
 				border-top: 7px solid colors.$bluMain;
 				border-bottom: 7px solid colors.$lemonMain;

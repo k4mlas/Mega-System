@@ -49,4 +49,27 @@
 			}
 		}
 	}
+	.contact {
+		&__body {
+			flex-direction: row;
+			justify-content: space-evenly;
+			padding: 1rem;
+			&__data {
+				padding: 0;
+				h3 {
+					font-size: 1.6rem;
+				}
+				p {
+					margin-bottom: .5rem;
+				}
+			}
+			&__mapMobile {
+				margin-top: 0;
+				iframe {
+					width: 18.75rem;
+					height: 18.75rem;
+				}
+			}
+		}
+	}
 }

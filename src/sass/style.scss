@@ -233,6 +233,13 @@ body {
 					border-right: 7px solid colors.$lemonMain;
 					margin-top: 2.5rem;
 					margin-bottom: 2rem;
+					transition: border 0.4s;
+					&:hover {
+						border-top: 13px solid colors.$bluMain;
+						border-bottom: 13px solid colors.$lemonMain;
+						border-left: 13px solid colors.$bluMain;
+						border-right: 13px solid colors.$lemonMain;
+					}
 				}
 			}
 			&__text {
@@ -525,15 +532,47 @@ body {
 			}
 		}
 	}
+	&__concession {
+		width: 100%;
+		min-height: 30vh;
+		margin-top: 2rem;
+		background: colors.$offerTitle;
+	}
 }
 //contakt
 
-.contact{
-	background-image: url(../img/contactImg.jpg);
-	height: 100vh;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
+.contact {
+	min-height: 50vh;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0.5rem;
+		text-align: center;
+		&__data {
+			padding: 0.5rem;
+			h3 {
+				font-size: 2rem;
+				margin-bottom: 1rem;
+			}
+			p {
+				margin-bottom: 1rem;
+			}
+		}
+		&__mapMobile {
+			margin-top: 1rem;
+			iframe {
+				width: 15.625rem;
+				height: 15.625rem;
+				border-radius: 1.25rem;
+				border-top: 7px solid colors.$bluMain;
+				border-bottom: 7px solid colors.$lemonMain;
+				border-left: 7px solid colors.$bluMain;
+				border-right: 7px solid colors.$lemonMain;
+			}
+		}
+	}
 }
 
 @import './components';

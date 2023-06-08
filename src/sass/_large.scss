@@ -114,17 +114,7 @@
 				&--revers {
 					flex-direction: row-reverse;
 				}
-				&__photo {
-					&__picture {
-						&:hover {
-							border-top: 13px solid colors.$bluMain;
-							border-bottom: 13px solid colors.$lemonMain;
-							border-left: 13px solid colors.$bluMain;
-							border-right: 13px solid colors.$lemonMain;
-						}
-						transition: border 0.4s;
-					}
-				}
+				
 			}
 		}
 	}
@@ -211,6 +201,28 @@
 					&__pdf {
 						width: 34rem;
 					}
+				}
+			}
+		}
+	}
+	.contact {
+		&__body {
+			justify-content: space-between;
+			padding: 1.2rem;
+			&__data {
+				padding: 1.2rem;
+				h3 {
+					font-size: 2.5rem;
+				}
+				p {
+					margin-bottom: 1rem;
+					font-size: 1.1rem;
+				}
+			}
+			&__mapMobile {
+				iframe {
+					width: 34.375rem;
+					height: 34.375rem;
 				}
 			}
 		}

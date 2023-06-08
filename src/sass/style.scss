@@ -537,6 +537,29 @@ body {
 		min-height: 30vh;
 		margin-top: 2rem;
 		background: colors.$offerTitle;
+		&__body{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 1.5rem;
+			&__title{
+				margin-bottom: 1rem;
+				font-size: 1.2rem;
+				text-transform: uppercase;
+				text-align: center;
+				color: colors.$blackMain;
+			}
+			&__img{
+				width: 200px;
+				border-radius: 1.25rem;
+				border-top: 7px solid colors.$bluMain;
+				border-bottom: 7px solid colors.$lemonMain;
+				border-left: 7px solid colors.$bluMain;
+				border-right: 7px solid colors.$lemonMain;
+			}
+
+		}
 	}
 }
 //contakt
@@ -552,6 +575,7 @@ body {
 		text-align: center;
 		&__data {
 			padding: 0.5rem;
+			color: colors.$blackMain;
 			h3 {
 				font-size: 2rem;
 				margin-bottom: 1rem;

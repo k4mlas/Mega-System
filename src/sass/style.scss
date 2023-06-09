@@ -537,29 +537,39 @@ body {
 		min-height: 30vh;
 		margin-top: 2rem;
 		background: colors.$offerTitle;
-		&__body{
+		&__body {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			padding: 1.5rem;
-			&__title{
+			&__title {
 				margin-bottom: 1rem;
 				font-family: 'regular2kd', sans-serif;
-				font-size: 1.2rem;
+				font-size: 1.3rem;
 				text-transform: uppercase;
 				text-align: center;
 				color: colors.$blackMain;
 			}
-			&__img{
+			&__img {
 				width: 250px;
 				border-radius: 1.25rem;
-				border-top: 7px solid colors.$bluMain;
-				border-bottom: 7px solid colors.$lemonMain;
-				border-left: 7px solid colors.$bluMain;
-				border-right: 7px solid colors.$lemonMain;
+				border: 7px solid white;
 			}
-
+			&__text {
+				padding: 0.5rem;
+				margin-top: 1rem;
+				font-size: 1.2rem;
+				span {
+					padding: 0.5rem;
+					color: colors.$whineMain;
+					cursor: pointer;
+					transition: background-color 0.4s;
+					&:hover {
+						background-color: colors.$blackMain;
+					}
+				}
+			}
 		}
 	}
 }
@@ -578,8 +588,11 @@ body {
 			padding: 0.5rem;
 			color: colors.$blackMain;
 			h3 {
-				font-size: 2rem;
+				margin-top: 2rem;
 				margin-bottom: 1rem;
+				img {
+					width: 55%;
+				}
 			}
 			p {
 				margin-bottom: 1rem;
@@ -596,6 +609,22 @@ body {
 				border-left: 7px solid colors.$bluMain;
 				border-right: 7px solid colors.$lemonMain;
 			}
+		}
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+		background-image: url(../img/formSmall.jpg);
+		background-position: center;
+		background-size: cover;
+		&__body{
+			display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		}
 	}
 }

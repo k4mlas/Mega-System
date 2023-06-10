@@ -69,5 +69,25 @@
 				}
 			}
 		}
+		&__form {
+			background-image: url(../img/formBig.jpg);
+			&__body {
+				&__box {
+					label {
+						font-size: 1.3rem;
+					}
+					input {
+						font-size: 1.2rem;
+					}
+					textarea {
+						font-size: 1.2rem;
+					
+					}
+				}
+				&__btn{
+					width: 20%;
+				}
+			}
+		}
 	}
 }

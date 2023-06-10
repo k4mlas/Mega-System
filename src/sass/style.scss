@@ -648,7 +648,7 @@ body {
 					width: 80%;
 					height: 40px;
 					padding: 0.8rem;
-					margin-bottom: 1.1rem;
+					margin-bottom: .4rem;
 					font-size: 1rem;
 					text-align: center;
 					border: none;
@@ -663,13 +663,29 @@ body {
 					min-height: 10rem;
 					max-height: 10rem;
 					padding: 0.8rem;
-					margin-bottom: 2rem;
+					margin-bottom: .4rem;
 					border: none;
 					font-size: 1rem;
 					border-radius: 1.25rem;
 					background: colors.$formColor;
 					color: colors.$blackMain;
 					outline-color: colors.$lemonMain;
+				}
+				&__error{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: .9rem;
+					text-align: center;
+					font-weight: bold;
+					color:colors.$alert;
+					visibility: hidden; // Zmienić w JS
+					svg{
+						margin-right: .4rem;
+					}
+					&:last-child{
+						margin-bottom: 1rem;
+					}
 				}
 			}
 			&__btn {
@@ -681,12 +697,13 @@ body {
 				text-transform: uppercase;
 				text-align: center;
 				font-size: 1rem;
-				background-color: colors.$whineMain;
+				background-color: colors.$lemonMain;
 				color: colors.$blackMain;
 				cursor: pointer;
-				transition: background-color 0.4s;
+				transition: background-color 0.4s, color .4s;
 				&:hover {
-					background-color: colors.$lemonMain;
+					background-color: colors.$bluMain;
+					color: colors.$whineMain;
 				}
 			}
 		}

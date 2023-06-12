@@ -529,6 +529,7 @@ body {
 						border-right: 13px solid colors.$lemonMain;
 					}
 				}
+				
 			}
 		}
 	}
@@ -771,7 +772,7 @@ body {
 					text-transform: uppercase;
 					font-family: 'regular2kd', sans-serif;
 					font-size: 1rem;
-					color: colors.$blackMain;
+					color: colors.$whineMain;
 				}
 				&__link {
 					padding: 0.1rem;
@@ -796,29 +797,29 @@ body {
 				height: 0.125rem;
 				background-color: colors.$whineMain;
 			}
-			&__titleCompany{
+			&__titleCompany {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				padding: .8rem;
-				&__name{
+				padding: 0.8rem;
+				&__name {
 					text-align: center;
 					text-transform: uppercase;
 					font-family: 'regular2kd', sans-serif;
 					font-size: 1rem;
 					color: colors.$whineMain;
 				}
-				&__info{
-					margin-bottom: .5rem;
+				&__info {
+					margin-bottom: 0.5rem;
 					text-align: center;
-					font-size: .8rem;
-					color: colors.$blackMain;
+					font-size: 0.8rem;
+					color: colors.$whineMain;
 				}
-				&__author{
+				&__author {
 					text-align: center;
-					font-size: .8rem;
-					color: colors.$blackMain;
+					font-size: 0.8rem;
+					color: colors.$whineMain;
 				}
 			}
 		}

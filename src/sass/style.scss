@@ -504,47 +504,53 @@ body {
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				position: relative;
-				&:hover > div {
-					clip-path: circle(20% at 50% 50%);
-				}
-
-				&__pdf {
-					display: block;
-					width: 15.625rem;
-					margin-bottom: 2rem;
-					border-radius: 1.25rem;
-					border-top: 7px solid colors.$bluMain;
-					border-bottom: 17px solid colors.$lemonMain;
-					border-left: 7px solid colors.$bluMain;
-					border-right: 17px solid colors.$lemonMain;
-				}
-				&__shadow {
+				&__box {
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
 					align-items: center;
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					background-color: colors.$bluMain;
-					overflow: hidden;
-					clip-path: circle(0% at 50% 50%);
-					transition: clip-path 0.5s;
-					&__icon {
-						stroke: colors.$whineMain;
+					position: relative;
+					&:hover > div {
+						clip-path: circle(20% at 50% 50%);
 					}
-					&__link {
-						text-decoration: none;
-						font-family: 'regular2kd', sans-serif;
-						font-size: 1.1rem;
-						text-align: center;
-						text-transform: uppercase;
-						text-decoration: none;
-						color: colors.$whineMain;
-						cursor: pointer;
+
+					&__pdf {
+						display: block;
+						width: 15.625rem;
+						margin-bottom: 2rem;
+						border-radius: 1.25rem;
+						border-top: 7px solid colors.$bluMain;
+						border-bottom: 17px solid colors.$lemonMain;
+						border-left: 7px solid colors.$bluMain;
+						border-right: 17px solid colors.$lemonMain;
+					}
+					&__shadow {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						background-color: colors.$bluMain;
+						overflow: hidden;
+						clip-path: circle(0% at 50% 50%);
+						transition: clip-path 0.5s;
+						&__icon {
+							stroke: colors.$whineMain;
+						}
+						&__link {
+							text-decoration: none;
+							font-family: 'regular2kd', sans-serif;
+							font-size: 1.1rem;
+							text-align: center;
+							text-transform: uppercase;
+							text-decoration: none;
+							color: colors.$whineMain;
+							cursor: pointer;
+						}
 					}
 				}
 			}

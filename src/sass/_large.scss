@@ -114,7 +114,6 @@
 				&--revers {
 					flex-direction: row-reverse;
 				}
-				
 			}
 		}
 	}
@@ -198,12 +197,14 @@
 				}
 				&__thank {
 					flex-direction: column;
-					&__pdf {
-						width: 34rem;
-					}
-					&__shadow {
-						&__link {
-							font-size: 1.5rem;
+					&__box {
+						&__pdf {
+							width: 34rem;
+						}
+						&__shadow {
+							&__link {
+								font-size: 1.5rem;
+							}
 						}
 					}
 				}
@@ -217,7 +218,7 @@
 			&__data {
 				padding: 1.2rem;
 				h3 {
-					img{
+					img {
 						width: 70%;
 					}
 				}

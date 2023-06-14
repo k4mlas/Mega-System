@@ -51,6 +51,26 @@
 				}
 			}
 		}
+		&__concession {
+			&__body {
+				flex-direction: row;
+				justify-content: space-between;
+				&__text {
+					&__title {
+						font-size: .8rem;
+					}
+					&__titleCd {
+						font-size: .6rem;
+					}
+				}
+				&__info {
+					&__text {
+						margin-top: 0;
+						font-size: .8rem;
+					}
+				}
+			}
+		}
 	}
 	.contact {
 		&__body {

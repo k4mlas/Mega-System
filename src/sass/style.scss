@@ -435,7 +435,7 @@ body {
 					}
 					&__text {
 						font-size: 1rem;
-						margin-bottom: 0.4rem;
+						margin-bottom: 0.6rem;
 						text-align: center;
 					}
 					&__author {
@@ -455,7 +455,7 @@ body {
 				text-transform: uppercase;
 				text-align: center;
 				font-family: 'imbuethin';
-				font-size: 1.5rem;
+				font-size: 2rem;
 			}
 			&__author {
 				text-align: right;
@@ -567,33 +567,76 @@ body {
 			justify-content: center;
 			align-items: center;
 			padding: 1.5rem;
-			&__title {
-				margin-bottom: 1rem;
-				font-family: 'regular2kd', sans-serif;
-				font-size: 1.3rem;
-				text-transform: uppercase;
-				text-align: center;
-				color: colors.$blackMain;
-				span {
-					text-transform: capitalize;
+			&__text {
+				&__title {
+					font-family: 'regular2kd', sans-serif;
+					font-size: 1.3rem;
+					text-transform: uppercase;
+					text-align: center;
+					color: colors.$blackMain;
+					span {
+						text-transform: capitalize;
+					}
+				}
+				&__titleCd {
+					margin-bottom: 1rem;
+					text-align: center;
+					font-size: 1rem;
 				}
 			}
-			&__img {
-				width: 250px;
-				border-radius: 1.25rem;
-				border: 7px solid white;
+			&__file {
+				position: relative;
+				&:hover > div {
+					clip-path: circle(20% at 50% 50%);
+				}
+				&__img {
+					width: 250px;
+					border-radius: 1.25rem;
+					border: 7px solid white;
+				}
+				&__shadow {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background-color: colors.$bluMain;
+					overflow: hidden;
+					clip-path: circle(0% at 50% 50%);
+					transition: clip-path 0.5s;
+					&__icon {
+						stroke: colors.$whineMain;
+					}
+					&__link {
+						text-decoration: none;
+						font-family: 'regular2kd', sans-serif;
+						font-size: 1.1rem;
+						text-align: center;
+						text-transform: uppercase;
+						text-decoration: none;
+						color: colors.$whineMain;
+						cursor: pointer;
+					}
+				}
 			}
-			&__text {
-				padding: 0.5rem;
-				margin-top: 1rem;
-				font-size: 1.2rem;
-				text-align: center;
-				span {
-					color: colors.$whineMain;
-					cursor: pointer;
-					transition: background-color 0.4s;
-					&:hover {
-						background-color: colors.$blackMain;
+			&__info {
+				&__text {
+					padding: 0.5rem;
+					margin-top: 1rem;
+					font-size: 1rem;
+					text-align: center;
+					color: colors.$blackMain;
+					span {
+						color: colors.$whineMain;
+						cursor: pointer;
+						transition: background-color 0.4s;
+						&:hover {
+							background-color: colors.$blackMain;
+						}
 					}
 				}
 			}

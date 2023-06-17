@@ -729,7 +729,7 @@ body {
 					border-radius: 1.25rem;
 					background: colors.$formColor;
 					color: colors.$blackMain;
-					outline-color: colors.$lemonMain;
+					outline-color:colors.$lemonMain;
 					&::placeholder{
 						font-size: .8rem;
 					}

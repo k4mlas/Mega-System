@@ -693,12 +693,19 @@ body {
 		background-image: url(../img/formSmall.jpg);
 		background-position: center;
 		background-size: cover;
+		color:colors.$blackMain;
 		&__body {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			padding: 2rem;
+			&__title {
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 1rem;
+				font-family: 'regular2kd', sans-serif;
+			}
 			&__box {
 				display: flex;
 				flex-direction: column;
@@ -718,11 +725,14 @@ body {
 					margin-bottom: 0.4rem;
 					font-size: 1rem;
 					text-align: center;
-					border: none;
+					border: transparent;
 					border-radius: 1.25rem;
 					background: colors.$formColor;
 					color: colors.$blackMain;
 					outline-color: colors.$lemonMain;
+					&::placeholder{
+						font-size: .8rem;
+					}
 				}
 				textarea {
 					min-width: 80%;
@@ -737,6 +747,9 @@ body {
 					background: colors.$formColor;
 					color: colors.$blackMain;
 					outline-color: colors.$lemonMain;
+					&::placeholder{
+						font-size: .8rem;
+					}
 				}
 				&__error {
 					display: flex;

@@ -3,11 +3,13 @@ let $btnNavMobile;
 let $navMobile;
 let $navLinksMobile;
 let $navDesktop;
+let $footerYear;
 ///////////////////////////////////////
 
 const main = () => {
 	prepareDOMElements();
 	prepareDOMEvens();
+	handleCurrentYear();
 };
 
 const prepareDOMElements = () => {
@@ -19,6 +21,8 @@ const prepareDOMElements = () => {
 	);
 	//zmienne do nawigacji desktop
 	$navDesktop = document.querySelector('.header__img__navDesktop__navigaction');
+	// zmienna do roku w footer
+	$footerYear = document.querySelector('.footerYear');
 };
 
 const prepareDOMEvens = () => {
@@ -26,6 +30,12 @@ const prepareDOMEvens = () => {
 	window.addEventListener('scroll', addBacground);
 };
 ///////////////////////////////////////////////////////Funkcje
+
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	console.log(year);
+	$footerYear.innerText = year;
+};
 
 const showNav = () => {
 	$btnNavMobile.classList.toggle('is-active');
@@ -39,6 +49,7 @@ const showNav = () => {
 		});
 	});
 };
+
 
 const addBacground = () => {
 	if (window.scrollY >= 250) {

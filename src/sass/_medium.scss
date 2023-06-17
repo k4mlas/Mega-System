@@ -95,15 +95,24 @@
 		&__form {
 			background-image: url(../img/formBig.jpg);
 			&__body {
+				&__title {
+					font-size: 1.3rem;
+				}
 				&__box {
 					label {
 						font-size: 1.3rem;
 					}
 					input {
 						font-size: 1.2rem;
+						&::placeholder{
+							font-size: 1rem;
+						}
 					}
 					textarea {
 						font-size: 1.2rem;
+						&::placeholder{
+							font-size: 1rem;
+						}
 					}
 				}
 				&__btn {

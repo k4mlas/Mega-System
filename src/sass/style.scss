@@ -685,6 +685,7 @@ body {
 		}
 	}
 	&__form {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -693,7 +694,7 @@ body {
 		background-image: url(../img/formSmall.jpg);
 		background-position: center;
 		background-size: cover;
-		color:colors.$blackMain;
+		color: colors.$blackMain;
 		&__body {
 			display: flex;
 			flex-direction: column;
@@ -729,9 +730,9 @@ body {
 					border-radius: 1.25rem;
 					background: colors.$formColor;
 					color: colors.$blackMain;
-					outline-color:colors.$lemonMain;
-					&::placeholder{
-						font-size: .8rem;
+					outline-color: colors.$lemonMain;
+					&::placeholder {
+						font-size: 0.8rem;
 					}
 				}
 				textarea {
@@ -747,8 +748,8 @@ body {
 					background: colors.$formColor;
 					color: colors.$blackMain;
 					outline-color: colors.$lemonMain;
-					&::placeholder{
-						font-size: .8rem;
+					&::placeholder {
+						font-size: 0.8rem;
 					}
 				}
 				&__error {
@@ -784,6 +785,52 @@ body {
 				&:hover {
 					background-color: colors.$bluMain;
 					color: colors.$whineMain;
+				}
+			}
+			&__rodo {
+				margin-top: .9rem;
+				font-size: .7rem;
+				text-align: center;
+				color: colors.$whineMain;
+			}
+		}
+		.popup {
+			display: none;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: .8rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 70%;
+			height: 200px;
+			background-color: colors.$whineMain;
+			border-radius: 1.25rem;
+			border-top: 7px solid colors.$bluMain;
+			border-bottom: 17px solid colors.$lemonMain;
+			border-left: 7px solid colors.$bluMain;
+			border-right: 17px solid colors.$lemonMain;
+			font-family: 'regular2kd', sans-serif;
+			text-align: center;
+			color:colors.$blackMain;
+			&__btn{
+				width: 40%;
+				height: 2.5rem;
+				border: none;
+				border-radius: 1.25rem;
+				font-family: 'regular2kd', sans-serif;
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 1rem;
+				background-color: colors.$bluMain;
+				color: colors.$whineMain;
+				cursor: pointer;
+				transition: background-color 0.4s, color 0.4s;
+				&:hover {
+					background-color: colors.$lemonMain;
+					color: colors.$blackMain;
 				}
 			}
 		}

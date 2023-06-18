@@ -591,24 +591,24 @@
                     <div class="thanks__concession__body__file">
                         <img class="thanks__concession__body__file__img" src="./dist/img/koncesja1.jpg"
                             alt="Dokument przedstawiający koncesję">
-                            <div class="thanks__concession__body__file__shadow">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="thanks__concession__body__file__shadow__icon" width="34" height="34"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M4 20l16 0"></path>
-                                    <path d="M12 14l0 -10"></path>
-                                    <path d="M12 14l4 -4"></path>
-                                    <path d="M12 14l-4 -4"></path>
-                                </svg>
-                                <a class="thanks__concession__body__file__shadow__link"
-                                    href="./dist/pdf/koncesja.pdf" target="_blank">pobierz</a>
-                            </div>
+                        <div class="thanks__concession__body__file__shadow">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="thanks__concession__body__file__shadow__icon"
+                                width="34" height="34" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 20l16 0"></path>
+                                <path d="M12 14l0 -10"></path>
+                                <path d="M12 14l4 -4"></path>
+                                <path d="M12 14l-4 -4"></path>
+                            </svg>
+                            <a class="thanks__concession__body__file__shadow__link" href="./dist/pdf/koncesja.pdf"
+                                target="_blank">pobierz</a>
+                        </div>
                     </div>
-                    <div class="thanks__concession__body__info"> 
-                    <p class="thanks__concession__body__info__text">Sprawdź nasze pozostałe certyfikaty <span>tutaj</span>
-                    </p>
+                    <div class="thanks__concession__body__info">
+                        <p class="thanks__concession__body__info__text">Sprawdź nasze pozostałe certyfikaty
+                            <span>tutaj</span>
+                        </p>
                     </div>
                 </div>
 
@@ -641,10 +641,10 @@
                     <div class="contact__form__body__box">
                         <label for="name">Twoje imię:</label>
                         <input placeholder="Wpisz swoje imię" type="text" id="name">
-                        <p class="contact__form__body__box__error"><svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-alert-hexagon" width="24" height="24"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
+                        <p class="contact__form__body__box__error" id="nameError"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-hexagon"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path
                                     d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
@@ -656,10 +656,10 @@
                     <div class="contact__form__body__box">
                         <label for="mail">Twój adres e-mail:</label>
                         <input placeholder="Wpisz swój adres e-mail" type="email" id="mail">
-                        <p class="contact__form__body__box__error"><svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-alert-hexagon" width="24" height="24"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
+                        <p class="contact__form__body__box__error" id="emailError"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-hexagon"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path
                                     d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
@@ -671,10 +671,10 @@
                     <div class="contact__form__body__box">
                         <label for="msg">Treść wiadomości:</label>
                         <textarea placeholder="Wpisz wiadomość" id="msg" cols="30" rows="10"></textarea>
-                        <p class="contact__form__body__box__error"><svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-alert-hexagon" width="24" height="24"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
+                        <p class="contact__form__body__box__error" id="textError"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-hexagon"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path
                                     d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z">
@@ -683,11 +683,17 @@
                                 <path d="M12 16h.01"></path>
                             </svg>Pole nie może być puste</p>
                     </div>
-                    <button type="submit" class="contact__form__body__btn">wyślij</button>
+                    <button type="button" class="contact__form__body__btn">wyślij</button>
+                    <p class="contact__form__body__rodo">Administratorem danych osobowych jest MEGA-SYSTEM Przedsiębiorswo Instalacyjne Bogusław Myrcha. Dane wpisane w formularzu kontaktowym beda przetwarzane w celu udzielenia odpowiedzi na przestane zapytanie zgodnie z regulaminem (link do regulaminu).</p>
                 </form>
+                <div class="popup">
+                    <h3 class="popup__info">Formularz został przesłany poprawnie</h3>
+                    <button class="popup__btn">Zamknij</button>
+                </div>
             </div>
         </section>
-        
+
+
     </main>
     <footer class="footer">
     <div class="footer__info wrapper">

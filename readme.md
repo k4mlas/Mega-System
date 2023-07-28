@@ -1,4 +1,4 @@
-# MegaSystem
+# UltraSystem
 ### [Go to the page! 🙂](https://k4mlas.github.io/Mega-System/)
 <br>
 

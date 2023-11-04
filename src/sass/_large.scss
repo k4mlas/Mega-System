@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 160px;
+	}
 	.header {
 		&__img {
 			height: 100vh;

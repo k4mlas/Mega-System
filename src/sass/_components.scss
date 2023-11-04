@@ -49,3 +49,12 @@
 		padding: 0.5rem;
 	}
 }
+
+// errorInput
+
+.errorInput {
+	background-color: colors.$error !important;
+	&::placeholder{
+		color: colors.$whineMain;
+	}
+}

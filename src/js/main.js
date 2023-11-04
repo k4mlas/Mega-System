@@ -9,12 +9,13 @@ let $name;
 let $email;
 let $text;
 let $formBtn;
-let $infoForm;
 let $nameError;
 let $emailError;
 let $textError;
+let $errorInfo;
 let $popup;
 let $popupBtn;
+let $errorsNumbers;
 ///////////////////////////////////////
 
 const main = () => {
@@ -39,10 +40,7 @@ const prepareDOMElements = () => {
 	$email = document.querySelector('#mail');
 	$text = document.querySelector('#msg');
 	$formBtn = document.querySelector('.contact__form__body__btn');
-	$infoForm - document.querySelector('.popup');
-	$nameError = document.querySelector('#nameError');
-	$emailError = document.querySelector('#emailError');
-	$textError = document.querySelector('#textError');
+	$errorInfo = document.querySelectorAll('.contact__form__body__box__error');
 	$popup = document.querySelector('.popup');
 	$popupBtn = document.querySelector('.popup__btn');
 };
@@ -50,8 +48,18 @@ const prepareDOMElements = () => {
 const prepareDOMEvens = () => {
 	$btnNavMobile.addEventListener('click', showNav);
 	window.addEventListener('scroll', addBacground);
-	$formBtn.addEventListener('click', formConact);
-	$popupBtn.addEventListener('click', closePopup);
+	$formBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+		checkForm([$name, $email, $text]);
+		checkEmail();
+		checkName();
+		errors([$name, $email, $text]);
+	});
+	$popupBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+		closeForm();
+	});
+	// $popupBtn.addEventListener('click', closePopup);
 };
 ///////////////////////////////////////////////////////Funkcje
 
@@ -81,45 +89,66 @@ const addBacground = () => {
 	}
 };
 
-const formConact = () => {
-	if ($text.value != '' && $name.value != '' && $email.value != '') {
-		showpop();
-		$text.value = '';
-		$email.value = '';
-		$name.value = '';
-		$nameError.style.visibility = 'hidden';
-		$emailError.style.visibility = 'hidden';
-		$textError.style.visibility = 'hidden';
+const showError = (error) => {
+	error.nextElementSibling.style.visibility = 'visible';
+	error.classList.add('errorInput');
+};
+
+const hideError = (error) => {
+	error.nextElementSibling.style.visibility = 'hidden';
+	error.classList.remove('errorInput');
+};
+
+const checkEmail = () => {
+	const reg =
+		/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	if (reg.test($email.value)) {
+		hideError($email);
 	} else {
-		checkForm();
+		showError($email);
 	}
 };
 
-const checkForm = () => {
-	if ($name.value == '') {
-		$nameError.style.visibility = 'visible';
+const checkName = () => {
+	if ($name.value.length == 0) {
+		showError($name);
+	} else if ($name.value.length > 0 && $name.value.length < 3) {
+		$name.nextElementSibling.style.visibility = 'visible';
+		$name.nextElementSibling.innerText = 'Wpisz minimum 3 znaki';
+		$name.classList.add('errorInput');
 	} else {
-		$nameError.style.visibility = 'hidden';
-	}
-	if ($email.value == '') {
-		$emailError.style.visibility = 'visible';
-	} else {
-		$emailError.style.visibility = 'hidden';
-	}
-	if ($text.value == '') {
-		$textError.style.visibility = 'visible';
-	} else {
-		$textError.style.visibility = 'hidden';
+		hideError($name);
 	}
 };
 
-const showpop = () => {
-	$popup.style.display = 'flex';
+const errors = (numb) => {
+	$errorsNumbers = 0;
+	numb.forEach((el) => {
+		if (el.classList.contains('errorInput')) {
+			$errorsNumbers++;
+		}
+	});
+	if ($errorsNumbers == 0) {
+		$popup.style.display = 'flex';
+	}
+};
+const checkForm = (inputs) => {
+	inputs.forEach((el) => {
+		if (el.value === '') {
+			showError(el);
+		} else {
+			hideError(el);
+		}
+	});
 };
 
-const closePopup = () => {
+const closeForm = () => {
+	$name.value = '';
+	$email.value = '';
+	$text.value = '';
 	$popup.style.display = 'none';
 };
+
 ////////////////////////////////////////////////////////Funkcja Main
 
 document.addEventListener('DOMContentLoaded', main);
